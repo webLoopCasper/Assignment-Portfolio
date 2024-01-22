@@ -15,6 +15,7 @@
   img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
+    
   }
  
   input, button, textarea, select {
@@ -27,4 +28,45 @@
  
   #root, #__next {
     isolation: isolate;
+  }
+  /* reset end */
+*{
+    --main-background:grey;
+    --primary-color: lightcoral;
+    --secondary-color: blue;
+}
+  
+
+  /* varibels end */
+  .container{
+    margin: 10px;
+    background-color: var(--main-background);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .delA .headlineContainer,.delA p{
+    padding: 10px 25px;
+  }
+
+.contact{
+    background-color: var(--primary-color);
+    
+}
+
+  .contact p{
+    text-align: center;
+    font-weight: bold;
+    
+  }
+  .icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .iconContaier{
+    border-radius: 50%;
+    background-color: var(--main-background);
+    padding: 10px;
+    margin-bottom: 20px;
   }
