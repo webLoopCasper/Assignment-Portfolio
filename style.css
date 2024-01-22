@@ -43,6 +43,9 @@ font-weight: bold;
     font-size: 20px;
     font-weight: bold;
 }
+p{
+    font-size: 16px;
+}
   
   /* varibels end */
 
@@ -121,6 +124,9 @@ font-weight: bold;
         }
     .sub-heading{
         font-size: 24px;
+    }
+    p{
+        font-size: 18px;
     }
     .mainImg{
         grid-row: 1/3;
