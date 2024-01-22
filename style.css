@@ -78,13 +78,13 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
     .mainImg{
-        padding: 20px;
+        padding: 15px;
         border-radius: 30px;
     }
     .delA .headlineContainer{
         grid-column: 2/4;
         align-self: end;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
     }
     .delA p{
         grid-column: 1/4; 
