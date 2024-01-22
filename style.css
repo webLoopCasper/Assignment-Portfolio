@@ -70,3 +70,26 @@
     padding: 10px;
     margin-bottom: 20px;
   }
+
+  @media only screen and (min-width: 515px){
+    
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .mainImg{
+        padding: 20px;
+        border-radius: 30px;
+    }
+    .delA .headlineContainer{
+        grid-column: 2/4;
+        align-self: end;
+        padding-bottom: 20px;
+    }
+    .delA p{
+        grid-column: 1/4; 
+    }
+    .contact{
+        grid-column: 1/4;
+    }
+  }
