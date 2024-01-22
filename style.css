@@ -66,7 +66,7 @@
   }
   .iconContaier{
     border-radius: 50%;
-    background-color: var(--main-background);
+    background-color: var(--secondary-color);
     padding: 10px;
     margin-bottom: 20px;
   }
@@ -91,5 +91,22 @@
     }
     .contact{
         grid-column: 1/4;
+    }
+  }
+
+
+  @media only screen and (min-width: 690px){
+    .mainImg{
+        grid-row: 1/3;
+        object-fit: cover;
+        height: 100%;
+    }
+    .delA p{
+        grid-column: 2/4;
+        grid-row: 2/4; 
+    }
+    .contact{
+        grid-column: 1/2;
+        background-color: var(--main-background)
     }
   }
