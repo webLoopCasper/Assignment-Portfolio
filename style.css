@@ -29,6 +29,11 @@
   #root, #__next {
     isolation: isolate;
   }
+  button{
+    border: none;
+    background: none;
+    
+  }
   /* reset end */
 *{
     --main:#F7F3E3;
@@ -47,7 +52,7 @@ font-family: 'Josefin Sans', sans-serif
    
     font-family: 'Josefin Sans', sans-serif
 }
-p{
+p,label{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
@@ -176,4 +181,62 @@ p{
     .contact{
         border-radius: inherit;
     }
+  }
+  .dashContainer{
+    margin: 45px 20px;
+  }
+
+  /* delB */
+  .personContainer{
+    background-color: var(--main);
+    border-radius: 10px;
+    overflow: hidden; 
+  }
+  .detailsContainer{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+  }
+  .detailsContainer>div{
+    margin-left: 15px;
+  }
+  .detailsContainer img{
+    max-width: 70px;
+    border-radius: 50%;
+  }
+
+  .buttonwrapper{
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    min-height:50px;
+    align-items: center;
+    
+  }
+
+  .buttonwrapper label{
+    margin-right: 20px;
+  }
+
+  .card{
+    background-color: var(--main);
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .headCard{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px ;
+
+  }
+
+  .bodyCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    padding-inline:20px;
   }
