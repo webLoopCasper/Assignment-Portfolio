@@ -182,24 +182,79 @@ p,label{
         border-radius: inherit;
     }
   }
-  .dashContainer{
-    margin: 45px 20px;
-  }
+ 
 
   /* delB */
+
+  .dashContainer{
+    padding: 45px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin-inline:auto;
+  }
+
+  @media only screen and (min-width: 865px){
+    .dashContainer{
+        max-width: 1200px;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+      }
+      .personContainer{
+       grid-row: 1/3;
+      }
+
+  }
+  .cardcontainer{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 20px;
+  }
+  @media only screen and (min-width: 865px){
+    
+    .cardcontainer{
+      
+        grid-template-columns: 1fr 1fr;
+        
+      }
+  }
+  @media only screen and (min-width: 1000px){
+    
+    .cardcontainer{
+      
+        grid-template-columns: 1fr 1fr 1fr;
+        
+      }
+  }
   .personContainer{
     background-color: var(--main);
     border-radius: 10px;
     overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
   .detailsContainer{
     display: flex;
-    padding: 20px;
     align-items: center;
+    padding: 20px;
   }
   .detailsContainer>div{
     margin-left: 15px;
   }
+  @media only screen and (min-width: 865px){
+    .detailsContainer{
+        flex-direction: column;
+        align-items: start;
+    }
+    .detailsContainer>div{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+      
+  }
+  
   .detailsContainer img{
     max-width: 70px;
     border-radius: 50%;
@@ -213,6 +268,17 @@ p,label{
     align-items: center;
     
   }
+  @media only screen and (min-width: 865px){
+    
+    .buttonwrapper{
+        display: block;
+        padding-block: 10px;
+      }
+    .buttonwrapper>div{
+        padding: 5px 20px;
+    }
+      
+  }
 
   .buttonwrapper label{
     margin-right: 20px;
@@ -220,7 +286,7 @@ p,label{
 
   .card{
     background-color: var(--main);
-    margin-top: 40px;
+    /* margin-top: 40px; */
     border-radius: 10px;
     overflow: hidden;
   }
@@ -239,4 +305,12 @@ p,label{
     align-items: center;
     min-height: 100px;
     padding-inline:20px;
+  }
+  @media only screen and (min-width: 1000px){
+    .bodyCard{
+        display: block;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
   }
